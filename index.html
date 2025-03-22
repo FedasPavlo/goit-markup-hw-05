@@ -378,13 +378,11 @@
                         <label class="footer-label">
                             <input type="email" name="email" value="email" placeholder="E-mail" class="footer-input">
                         </label>
-                        <button class="footer-button">
-                            <a href="#" class="footer-btn">
-                                Subscribe
-                                <svg class="footer-svg-send" width='24' height="24">
-                                    <use href="./images/icons.svg#icon-send"></use>
-                                </svg>
-                            </a>
+                        <button class="footer-button" type="submit">
+                            Subscribe
+                            <svg class="footer-svg-send" width='24' height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
                         </button>
                     </form>
             </div>
@@ -392,7 +390,7 @@
     </footer>
 
     <!--MODAL-->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
         <div class="modal">
             <button type="button" class="btn-close">
                 <svg class="modal-svg-close" width="8" height="8">
@@ -402,45 +400,37 @@
             <p class="modal-p">Leave your contacts and we will call you back</p>
             <form class="form">
                 <div class="form-div">
-                    <label class="name-label" for="user-name">
-                        Name
-                        <div class="label-div">
-                            <input type="text" name="user-name" class="input-form">
-                            <svg class="modal-svg" width="18" height="24">
-                                <use href="./images/icons.svg#icon-person"></use>
-                            </svg>
-                        </div>
-                    </label>
+                    <label class="name-label" for="user-name"> Name</label>
+                    <div class="label-div">
+                        <input type="text" name="user-name" class="input-form">
+                        <svg class="modal-svg" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-div">
-                    <label class="name-label">
-                        Phone
-                        <div class="label-div">
-                            <input type="tel" name="phone" class="input-form">
-                            <svg class="modal-svg" width="18" height="24">
-                                <use href="./images/icons.svg#icon-phone"></use>
-                            </svg>
-                        </div>
-                    </label>
+                    <label class="name-label"> Phone</label>
+                    <div class="label-div">
+                        <input type="tel" name="phone" class="input-form">
+                        <svg class="modal-svg" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-div">
-                    <label class="name-label">
-                        Email
-                        <div class="label-div">
-                            <input type="email" name="email" class="input-form">
-                            <svg class="modal-svg" width="18" height="24">
-                                <use href="./images/icons.svg#icon-email"></use>
-                            </svg>
-                        </div>
-                    </label>
+                    <label class="name-label"> Email</label>
+                    <div class="label-div">
+                        <input type="email" name="email" class="input-form">
+                        <svg class="modal-svg" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-div-text">
-                    <label class="name-label" for="user-comment">
-                        Comment
-                        <textarea name="user-comment" placeholder="Text input" class="textarea">
-
-                        </textarea>
-                    </label>
+                    <label class="name-label" for="user-comment"> Comment</label>
+                    <textarea id='user-comment' name="user-comment" placeholder="Text input" class="textarea">
+                        
+                    </textarea>
                 </div>
                 <div class="form-checkbox">
                     <input type="checkbox" class="visually-hidden" name="user-privacy" value="true" id="user-privacy">
